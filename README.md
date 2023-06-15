@@ -51,8 +51,8 @@ CREATE TABLE `board_status`(
 Insert into board_Status value ("2","+4478178149", "Hussein" ,"1 JAN 2020" , "1" , "1" , "1" , "1" , "1" , "2" , "10" , "9");
 
 
-# sql-examples-
- on word text
+# sql-examples- Creating a table insert script
+ 
 
 CREATE PROCEDURE sproc_tblOrder_Insert
 		
