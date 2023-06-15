@@ -1,3 +1,20 @@
+/**
+* Make_circuitboard_db.sql
+*
+*
+*
+* Author: Hussein Jama
+* Email: P17178096@mydmu.365.ac.uk
+* Date: 10/05/2023
+*
+*
+* @author H Jama
+* @copyright HJA
+*
+*/
+
+
+
 # sql-examples-
  on word text
 
