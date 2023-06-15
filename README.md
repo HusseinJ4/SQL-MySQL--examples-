@@ -52,10 +52,10 @@ Insert into board_Status value ("2","+4478178149", "Hussein" ,"1 JAN 2020" , "1"
 # Mysql code to storing data into a mysql database with log in details to access the database
 
  //storing details into mysql database
-        //Web-user login: p17178096_web
-        //Web-user pw: celLo+22
-        //Developer login:p17178096
-        //Developer pw:Furls~11
+        //Web-user login: REMOVED IN THIS EXAMPLE
+        //Web-user pw: REMOVED IN THIS EXAMPLE
+        //Developer login:REMOVED IN THIS EXAMPLE
+        //Developer REMOVED IN THIS EXAMPLE
         'pdo_settings' => [
             'rdbms' => 'mysql',
             'host' => 'localhost',
