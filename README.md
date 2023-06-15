@@ -43,14 +43,14 @@ CREATE TABLE `board_status`(
  PRIMARY KEY (`board_id`)
 )
 
-# sql code to inserting data into a mysql database
+# Mysql code to inserting data into a mysql database
 
 
 
 Insert into board_Status value ("2","+4478178149", "Hussein" ,"1 JAN 2020" , "1" , "1" , "1" , "1" , "1" , "2" , "10" , "9");
 
 
-# sql-examples- Creating a table insert script
+# Mysql-examples- Creating a table insert script
  
 
 CREATE PROCEDURE sproc_tblOrder_Insert
