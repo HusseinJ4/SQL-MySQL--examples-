@@ -49,6 +49,23 @@ CREATE TABLE `board_status`(
 
 Insert into board_Status value ("2","+4478178149", "Hussein" ,"1 JAN 2020" , "1" , "1" , "1" , "1" , "1" , "2" , "10" , "9");
 
+# Mysql code to storing data into a mysql database with log in details to access the database
+
+ //storing details into mysql database
+        //Web-user login: p17178096_web
+        //Web-user pw: celLo+22
+        //Developer login:p17178096
+        //Developer pw:Furls~11
+        'pdo_settings' => [
+            'rdbms' => 'mysql',
+            'host' => 'localhost',
+            'db_name' => 'p17178096db',
+            'port' => '4567',
+            'user_name' => 'p17178096',
+            'user_password' => 'Furls~11',
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+
 
 # Mysql-examples- Creating a table insert script
  
