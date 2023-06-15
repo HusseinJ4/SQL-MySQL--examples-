@@ -13,8 +13,7 @@
 *
 */
 
- # MySQL-examples for receiving code from a data base that contains a list of products that a logged in user can select, create table in mysql
-
+ # MySQL- code for creating a table in a Mysql server
 /**
 * Make_circuitboard_db.sql
 *
