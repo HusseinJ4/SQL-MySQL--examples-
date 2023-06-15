@@ -13,7 +13,7 @@
 *
 */
 
- # MySql-examples for receiving code from a data base that contains a list of products that a logged in user can select, create table in mysql
+ # MySQL-examples for receiving code from a data base that contains a list of products that a logged in user can select, create table in mysql
 
 /**
 * Make_circuitboard_db.sql
