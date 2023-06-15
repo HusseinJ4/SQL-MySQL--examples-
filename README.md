@@ -160,6 +160,28 @@ CREATE TABLE `board_status`(
 
 Insert into board_Status value ("2","+4478178149", "Hussein" ,"1 JAN 2020" , "1" , "1" , "1" , "1" , "1" , "2" , "10" , "9");
 
+# sql code in order to allow me to join two tables together and creating a report
+CREATE PROCEDURE [dbo].[Sporc_Joiningappointmentsdatesreport]
+	@StartDate date,
+	@EndDate date
+AS
+	SELECT P17178096_tblSpeciality.HJ_SpecialityNo,
+	P17178096_tblSpeciality.HJ_ShortCode,
+	P17178096_tblSpeciality.HJ_LongDescription,
+	P17178096_tblConsultant.HJ_ConsultantNo,
+	P17178096_tblConsultant.HJ_FirstName,
+	P17178096_tblConsultant.HJ_LastName,
+	P17178096_tblAppointment.HJ_AppointmentDate,
+	P17178096_tblHospital.HJ_HospitalName,
+	P17178096_tblAppointment.HJ_Cost
+
+	FROM P17178096_tblAppointment,
+	     P17178096_tblSpeciality,
+		 P17178096_tblHospital,
+		 P17178096_tblConsultant
+
+
+
 
 
  
