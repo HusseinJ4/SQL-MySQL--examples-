@@ -13,3 +13,93 @@ CREATE PROCEDURE sproc_tblOrder_Insert
 		values (@UserID,  @Deliverystatus, @OrderTotal, @OrderDate);
 
 	RETURN @@Identity
+
+ # sql-examples for receiving code from a data base and displaying the data on a webpage 
+ <%
+            //Begin creating the index
+            Int32 Index = 0;
+            Int32 Count = MyCart.Products.Count;
+            //begnin creating the table 
+            Response.Write("<table border =\"1\">");
+
+            Response.Write("<tr>");
+            Response.Write("<td>");
+            Response.Write("Product ID");
+            Response.Write("</td>");
+            Response.Write("<td>");
+            Response.Write("Product Name");
+            Response.Write("</td>");
+            Response.Write("<td>");
+            Response.Write("Quantity");
+            Response.Write("</td>");
+            Response.Write("<td>");
+            Response.Write("Price");
+            Response.Write("</td>");
+            Response.Write("<td>");
+            Response.Write("</td>");
+            Response.Write("</tr>");
+            MyCart.OrderTotal = 0;
+            while (Index < Count)
+            {
+                Response.Write("<tr>");
+                Response.Write("<td>");
+                Response.Write(MyCart.Products[Index].ProductID);
+                Response.Write("</td>");
+                Response.Write("<td>");
+                //  Response.Write(MyCart.Products[Index].ProductName);
+                Response.Write("</td>");
+                Response.Write("<td>");
+                Response.Write(MyCart.Products[Index].QTY);
+                Response.Write("</td>");
+                Response.Write("<td>");
+                Response.Write(MyCart.Products[Index].Price);
+                MyCart.OrderTotal += MyCart.Products[Index].Price;
+                Response.Write("</td>");
+                Response.Write("<td>");
+                Response.Write("<a href=\"Remove.aspx?Index=" + Index + "\">Remove</a>");
+                Response.Write("</td>");
+                Response.Write("</tr>");
+                Index++;
+            }
+            Response.Write("<tr>");
+            Response.Write("<td colspan='5'>" + MyCart.OrderTotal + "</td>");
+            Response.Write("</tr>");
+
+            Response.Write("</table>");
+            %>
+
+
+ # sql-examples for receiving code from a data base that contains a list of products that a logged in user can select
+
+
+     <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+ 
