@@ -31,7 +31,7 @@ CREATE PROCEDURE sproc_tblOrder_Insert
 
 	RETURN @@Identity
 
- # sql-examples for receiving code from a data base and displaying the data on a webpage 
+ # sql script-examples for receiving code from a data base and displaying the data on a webpage 
  <%
             //Begin creating the index
             Int32 Index = 0;
